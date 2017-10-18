@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/jquery3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
     <title>Survey</title>
@@ -13,7 +13,7 @@
       <div class="jumbotron">
         <h1>Please Fill Out This Survey</h1>
       </div>
-      <form>
+      <form id="form">
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" class="form-control" id="name" placeholder="Name">
@@ -48,39 +48,40 @@
           <label for="flavor">Choose a flavor?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="chocolate" checked>
+              <input type="radio" name="flavor" value="Chocolate" checked>
               Chocolate
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="flavor" value="vanilla">
+              <input type="radio" name="flavor" value="Vanilla">
               Vanilla
             </label>
           </div>
           <div class="radio">
           <label>
-            <input type="radio" name="flavor" value="cookiesandcream">
+            <input type="radio" name="flavor" value="Cookies-and-Cream">
             Cookies & Cream
           </label>
         </div>
         </div>
         <div class="form-group">
           <label for="description">Describe yourself</label>
-          <textarea class="form-control" id="description" rows="3"></textarea>
+          <textarea class="form-control" id="description" rows="3" type="text"></textarea>
         </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       <div class="success">
         <h2>Thank you!</h2>
         <p>See your responses below:</p>
-        <p>Your Name:<span class="name"></span></p>
-        <p>Your Favoite Food:<span class="food"></span></p>
-        <p>Your Favorite Music:<span class="music"></span></p>
-        <p>Your Favorite Number:<span class="number"></span></p>
-        <p>Your Birthday:<span class="born"></span></p>
-        <p>Your Favorite Color:<span class="color"></span></p>
-        <p>Your Favorite Ice Cream Flavor:<span class="flavor"></span></p>
-        <p>Describe Yourself:<span class="description"></span></p>
+        <p>Your Name: <span class="name"></span></p>
+        <p>Your Favoite Food: <span class="food"></span></p>
+        <p>Your Favorite Music: <span class="music"></span></p>
+        <p>Your Favorite Number: <span class="number"></span></p>
+        <p>Your Birthday: <span class="born"></span></p>
+        <p>Your Favorite Color: <span class="color"></span></p>
+        <p>Your Favorite Ice Cream Flavor: <span class="flavor"></span></p>
+        <p>Describe Yourself: <span class="description"></span></p>
       </div>
     </div>
   </body>
