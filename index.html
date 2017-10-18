@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/jquery3.2.1.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Please Fill Out This Survey</h1>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="food">Favorite Food</label>
+          <input type="text" class="form-control" id="food" placeholder="pizza..nachos..ect">
+        </div>
+        <div class="form-group">
+          <label for="music">Favorite Music</label>
+          <input type="text" class="form-control" id="music" placeholder="Enya..Slayer..etc">
+        </div>
+        <div class="form-group">
+          <label for="number">Favorite Number Between 1 and 5</label>
+          <select class="form-control" id="number">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="born">Date of birth:</label>
+          <input id="born" class="form-control" type="date">
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+        <div class="form-group">
+          <label for="flavor">Choose a flavor?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="chocolate" checked>
+              Chocolate
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="flavor" value="vanilla">
+              Vanilla
+            </label>
+          </div>
+          <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="cookiesandcream">
+            Cookies & Cream
+          </label>
+        </div>
+        </div>
+        <div class="form-group">
+          <label for="description">Describe yourself</label>
+          <textarea class="form-control" id="description" rows="3"></textarea>
+        </div>
+      </form>
+      <div class="success">
+        <h2>Thank you!</h2>
+        <p>See your responses below:</p>
+        <p>Your Name:<span class="name"></span></p>
+        <p>Your Favoite Food:<span class="food"></span></p>
+        <p>Your Favorite Music:<span class="music"></span></p>
+        <p>Your Favorite Number:<span class="number"></span></p>
+        <p>Your Birthday:<span class="born"></span></p>
+        <p>Your Favorite Color:<span class="color"></span></p>
+        <p>Your Favorite Ice Cream Flavor:<span class="flavor"></span></p>
+        <p>Describe Yourself:<span class="description"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
